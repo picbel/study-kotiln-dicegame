@@ -1,6 +1,5 @@
 package app.function
 
-import app.domain.isEven
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.params.ParameterizedTest
