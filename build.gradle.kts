@@ -13,7 +13,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+    testImplementation("org.assertj:assertj-core:3.22.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
 }
 
 tasks.test {
@@ -21,7 +22,7 @@ tasks.test {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "17"
 }
 
 application {
