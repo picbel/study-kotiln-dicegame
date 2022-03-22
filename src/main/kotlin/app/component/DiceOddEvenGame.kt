@@ -13,7 +13,7 @@ class DiceOddEvenGame {
         val pick = oddEvenPick
         val diceNumber = supplyDiceNum
         println("주사위를 던졌습니다. 나온 결과값 = $diceNumber")
-        if (!isOdd(diceNumber) == pick) {
+        if (isOdd(diceNumber) == pick) {
             println("결과를 맞추셧습니다. 플레이어 승리")
         } else {
             println("결과를 못 맞추셧습니다. 플레이어 패배")
