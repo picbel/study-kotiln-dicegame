@@ -1,8 +1,8 @@
 package app.component
 
-import app.function.isOdd
-import app.function.supplyDiceNum
+import app.domain.Dice
 import app.function.oddEvenPick
+import java.sql.DriverManager.println
 
 class DiceOddEvenGame {
     fun startGame() {
@@ -11,9 +11,9 @@ class DiceOddEvenGame {
         println("1을 입력하시면 홀, 2를 입력하시면 짝입니다.")
         println("1 : 홀, 2: 짝")
         val pick = oddEvenPick
-        val diceNumber = supplyDiceNum
-        println("주사위를 던졌습니다. 나온 결과값 = $diceNumber")
-        if (isOdd(diceNumber) == pick) {
+        val dice = Dice.diceRoll(6)
+        println("주사위를 던졌습니다. 나온 결과값 = $dice")
+        if (dice.isOdd() == pick) {
             println("결과를 맞추셧습니다. 플레이어 승리")
         } else {
             println("결과를 못 맞추셧습니다. 플레이어 패배")
