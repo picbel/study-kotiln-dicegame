@@ -12,7 +12,7 @@ class DiceOddEvenGame {
         println("1 : 홀, 2: 짝")
         val pick = oddEvenPick
         val dice = Dice.diceRoll(6)
-        println("주사위를 던졌습니다. 나온 결과값 = $dice")
+        println("주사위를 던졌습니다. 나온 결과값 = ${dice.value}")
         if (dice.isOdd() == pick) {
             println("결과를 맞추셧습니다. 플레이어 승리")
         } else {

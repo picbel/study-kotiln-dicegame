@@ -17,4 +17,5 @@ internal class DiceTest{
     fun `주사위값이 짝수라면 거짓을 반환한다`(num: Int) {
         assertFalse(Dice(6,num).isOdd())
     }
+
 }
