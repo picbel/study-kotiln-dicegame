@@ -2,7 +2,6 @@ package app.component
 
 import app.domain.Dice
 import app.function.oddEvenPick
-import java.sql.DriverManager.println
 
 class DiceOddEvenGame {
     fun startGame() {
